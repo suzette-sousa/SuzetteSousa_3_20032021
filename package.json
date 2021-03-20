@@ -1,0 +1,15 @@
+{
+  "name": "suzettesousa_3_20032021",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "sass ./assets/styles/main.scss ./assets/styles/main.css --style=compressed --embed-sources"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suzette-sousa/SuzetteSousa_3_20032021.git"
+  },
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}
