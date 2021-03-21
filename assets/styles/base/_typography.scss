@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as v;
+
+@import url(v.$omf-font-url);
+
+body {
+  font-family: v.$omf-font--default;
+}
+h1,
+h2,
+h3 {
+  font-family: v.$omf-font--special;
+}
