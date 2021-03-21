@@ -1,9 +1,11 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/functions' as f;
 
 @import url(v.$omf-font-url);
 
 body {
   font-family: v.$omf-font--default;
+  font-size: f.rem(16);
 }
 h1,
 h2,
