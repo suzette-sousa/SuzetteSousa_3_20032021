@@ -1,4 +1,21 @@
-// COLORS
+/* ----------------------------- */
+/* COLORS
+/* ----------------------------- */
+
+// GRAPHIC CHARTER
 $omf-color--primary: #9356DC; 
 $omf-color--secondary: #FF79DA;
 $omf-color--tertiary: #99E2D0;
+
+// GRAPHIC CHARTER VARIANTS
+$omf-color--tertiary-dark: scale-color($omf-color--tertiary, $lightness: -65%, $saturation: 90%);
+
+// OTHERS
+$omf-color--black: #101010;
+$omf-color--grey-darkest: #353535;
+$omf-color--grey-darker: #7e7e7e;
+$omf-color--grey-light: #f6f6f6;
+
+body {
+  background-color: $omf-color--tertiary-dark;
+}
