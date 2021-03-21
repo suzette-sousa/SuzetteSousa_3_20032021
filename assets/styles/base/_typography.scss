@@ -5,10 +5,14 @@
 
 body {
   font-family: v.$omf-font--default;
-  font-size: f.rem(16);
+  font-size: v.$omg-font-size--medium;
 }
 h1,
 h2,
 h3 {
   font-family: v.$omf-font--special;
+}
+h1,
+h2 {
+  font-size: v.$omg-font-size--large;
 }

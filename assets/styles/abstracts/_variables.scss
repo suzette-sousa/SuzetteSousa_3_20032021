@@ -1,3 +1,5 @@
+@use '../abstracts/functions' as f;
+
 /* ----------------------------- */
 /* COLORS
 /* ----------------------------- */
@@ -20,6 +22,13 @@ $omf-color--grey-light: #f6f6f6;
 /* ----------------------------- */
 /* FONTS
 /* ----------------------------- */
+
+// FONT-FAMILY
 $omf-font-url: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap';
 $omf-font--special: 'Shrikhand', cursive;
 $omf-font--default: 'Roboto', sans-serif;
+
+// FONT-SIZE
+$omg-font-size--large: f.rem(30);
+$omg-font-size--medium: f.rem(17);
+$omg-font-size--small: f.rem(11);
