@@ -30,5 +30,10 @@ $omf-font--default: 'Roboto', sans-serif;
 
 // FONT-SIZE
 $omg-font-size--large: f.rem(30);
-$omg-font-size--medium: f.rem(17);
-$omg-font-size--small: f.rem(11);
+$omg-font-size--medium: f.rem(18);
+$omg-font-size--small: f.rem(16);
+
+/* ----------------------------- */
+/* SPACINGS
+/* ----------------------------- */
+$gutter--default: f.rem(20);

@@ -5,3 +5,7 @@
 // BASE
 @use './base/reset';
 @use './base/typography';
+@use './base/utilities';
+
+// LAYOUT
+@use './layout/footer';

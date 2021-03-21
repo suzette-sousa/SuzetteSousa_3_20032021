@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/functions' as f;
+
+.omf-l-footer {
+  background-color: v.$omf-color--grey-darkest;
+  color: #fff;
+  padding: v.$gutter--default 0;
+  &__logo {
+    display: block;
+    margin-bottom: f.rem(10);
+    font-family: v.$omf-font--special;
+  }
+  &__link {
+    display: flex;
+    padding: f.rem(3) 0;
+    font-size: v.$omg-font-size--small;
+  }
+  &__icn {
+    width: f.rem(30);
+  }
+}
