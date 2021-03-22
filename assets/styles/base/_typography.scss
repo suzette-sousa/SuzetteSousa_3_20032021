@@ -1,16 +1,19 @@
-@use '../abstracts/variables' as v;
-@use '../abstracts/functions' as f;
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
 
-@import url(v.$omf-font-url);
+@import url($omf-font-url);
 
 body {
-  font-family: v.$omf-font--default;
-  font-size: v.$omg-font-size--medium;
+  max-width: 375px; // A supprimer
+  box-shadow: 0 0 10px #ccc; // A supprimer
+  margin: auto; // A supprimer
+  font-family: $omf-font--default;
+  font-size: $omg-font-size--medium;
 }
 h1 {
-  font-family: v.$omf-font--special;
+  font-family: $omf-font--special;
 }
 h1,
 h2 {
-  font-size: v.$omg-font-size--large;
+  font-size: $omg-font-size--large;
 }
