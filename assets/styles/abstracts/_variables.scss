@@ -17,7 +17,8 @@ $omf-color--tertiary-dark: scale-color($omf-color--tertiary, $lightness: -65%, $
 $omf-color--black: #101010;
 $omf-color--grey-darkest: #353535;
 $omf-color--grey-darker: #7e7e7e;
-$omf-color--grey-light: #f6f6f6;
+$omf-color--grey-light: #d1d1d1;
+$omf-color--grey-lightest: #f6f6f6;
 
 /* ----------------------------- */
 /* FONTS
@@ -32,6 +33,7 @@ $omf-font--default: 'Roboto', sans-serif;
 $omg-font-size--large: rem(30);
 $omg-font-size--medium: rem(18);
 $omg-font-size--small: rem(16);
+$omg-font-size--xsmall: rem(14);
 
 /* ----------------------------- */
 /* SPACINGS

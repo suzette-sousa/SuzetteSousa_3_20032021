@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+
+.omf-c-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 15px $omf-color--grey-light;
+  &__label {
+    position: absolute;
+    right: rem(13);
+    top: rem(13);
+    padding: rem(7) rem(12);
+    background-color: $omf-color--tertiary;
+    border-radius: 2px;
+    color: $omf-color--tertiary-dark;
+    font-size: $omg-font-size--xsmall;
+  }
+}
