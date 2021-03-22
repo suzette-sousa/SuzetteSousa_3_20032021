@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+
+.omf-l-section, .omf-l-aside {
+  padding-top: rem(50);
+  padding-bottom: rem(50);
+}
+.omf-l-section {
+  &--small {
+    padding-top: rem(35);
+    padding-bottom: rem(55);
+    text-align: center;
+  }
+  &--high {
+    background-color: $omf-color--grey-lightest;
+  }
+}
