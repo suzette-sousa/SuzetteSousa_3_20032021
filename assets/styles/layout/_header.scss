@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+
+.omf-l-header {
+  display: grid;
+  justify-content: center;
+  box-shadow: 0 0 5px $omf-color--grey-darker;
+  &__logo {
+    padding: rem(10) 0;
+    font-family: $omf-font--special;
+    font-size: $omg-font-size--large;
+  }
+}
