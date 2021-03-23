@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+
+.omf-c-btn {
+  padding: rem(15) rem(22);
+  @include gradient($omf-color--primary, $omf-color--secondary);
+  border: none;
+  border-radius: rem(40);
+  box-shadow: 0 3px 10px $omf-color--grey-darker;
+  color: #fff;
+  font-size: $omg-font-size--small;
+}

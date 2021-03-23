@@ -10,3 +10,13 @@
     margin-right: rem(10);
   }
 }
+
+.omf-mea {
+  &__title {
+    margin-bottom: rem(10);
+    font-size: $omg-font-size--large;
+  }
+  &__btn {
+    margin-top: rem(30);
+  }
+}
