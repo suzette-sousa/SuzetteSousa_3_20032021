@@ -4,6 +4,7 @@
 .omf-c-card {
   position: relative;
   overflow: hidden;
+  background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 0 15px $omf-color--grey-light;
   &__label {
@@ -15,5 +16,8 @@
     border-radius: 2px;
     color: $omf-color--tertiary-dark;
     font-size: $omg-font-size--xsmall;
+  }
+  & + & {
+    margin-top: rem(15);
   }
 }

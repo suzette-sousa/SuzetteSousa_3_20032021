@@ -13,5 +13,8 @@
   }
   &--high {
     background-color: $omf-color--grey-lightest;
+    &__title {
+      margin-bottom: rem(20);
+    }
   }
 }
