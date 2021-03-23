@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+
+.omf-geoloc {
+  padding: rem(15);
+  background-color: $omf-color--grey-light;
+  text-align: center;
+  font-size: $omg-font-size--small;
+  &__icn {
+    margin-right: rem(10);
+  }
+}

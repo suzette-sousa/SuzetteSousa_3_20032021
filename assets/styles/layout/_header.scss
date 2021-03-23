@@ -3,6 +3,8 @@
 
 .omf-l-header {
   display: grid;
+  z-index: 1;
+  position: relative;
   justify-content: center;
   box-shadow: 0 0 5px $omf-color--grey-darker;
   &__logo {
