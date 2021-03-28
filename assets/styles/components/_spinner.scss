@@ -1,45 +1,45 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/functions' as *;
+// @use '../abstracts/variables' as *;
+// @use '../abstracts/functions' as *;
 
-.spinner {
-  position: fixed;
-  z-index: 99999;
-  background-color: #fff;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation-duration: 4s;
-  animation-name: slide;
-  animation-iteration-count: 1;
-  &__icn {
-    font-size: rem(100);
-    animation-duration: 4s;
-    animation-name: spinner;
-    animation-iteration-count: 1;
-  }
-}
+// .spinner {
+//   position: fixed;
+//   z-index: 99999;
+//   background-color: #fff;
+//   top: 0;
+//   left: -100%;
+//   width: 100%;
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   animation-duration: 4s;
+//   animation-name: slide;
+//   animation-iteration-count: 1;
+//   &__icn {
+//     font-size: rem(100);
+//     animation-duration: 4s;
+//     animation-name: spinner;
+//     animation-iteration-count: 1;
+//   }
+// }
 
-@keyframes spinner {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-30deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes spinner {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   50% {
+//     transform: rotate(-30deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
 
-@keyframes slide {
-  70% {
-    left: 0;
-  }
-  100% {
-    left: 100%;
-  }
-}
+// @keyframes slide {
+//   70% {
+//     left: 0;
+//   }
+//   100% {
+//     left: 100%;
+//   }
+// }

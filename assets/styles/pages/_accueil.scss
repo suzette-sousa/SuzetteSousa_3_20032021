@@ -3,7 +3,7 @@
 
 .omf-geoloc {
   padding: rem(15);
-  background-color: $omf-color--grey-light;
+  background-color: $omf-color--grey-lighter;
   text-align: center;
   font-size: $omg-font-size--small;
   &__icn {
@@ -18,5 +18,45 @@
   }
   &__btn {
     margin-top: rem(30);
+  }
+}
+
+.omg-howto {
+  counter-reset: section;
+  &__item {
+    position: relative;
+    &::before {
+      position: absolute;
+      left: rem(-15);
+      counter-increment: section;
+      content: counter(section);
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: rem(26);
+      height: rem(26);
+      background-color: $omf-color--primary;
+      border-radius: rem(30);
+      font-size: $omg-font-size--xsmall;
+      color: #fff;
+    }
+    margin-left: rem(15);
+    padding: rem(25) rem(35);
+    background-color: $omf-color--grey-lightest;
+    border-radius: rem(25);
+    box-shadow: 0 4px 15px $omf-color--grey-light;
+    font-size: $omg-font-size--small;
+    & + & {
+      margin-top: rem(20);
+    }
+    &__ico {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: rem(20);
+      margin-right: rem(20);
+      font-size: $omg-font-size--medium;
+      color: $omf-color--grey-darker;
+    }
   }
 }
