@@ -7,6 +7,7 @@
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 0 15px $omf-color--grey-light;
+  font-size: $omg-font-size--medium;
   &__label {
     position: absolute;
     right: rem(13);
@@ -19,5 +20,17 @@
   }
   & + & {
     margin-top: rem(15);
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(12);
+  }
+  &__geoloc {
+    font-weight: 300;
+  }
+  &__like {
+    padding: 0 rem(12);
+    font-size: $omg-font-size--xlarge;
   }
 }
