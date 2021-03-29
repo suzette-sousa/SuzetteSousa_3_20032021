@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+
+.omf-menu {
+  &__mea-picture {
+    position: sticky;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: rem(-50);
+  }
+  &__section {
+    display: grid;
+    grid-template-areas: 
+    "menu-title menu-title ."
+    "menu-content-starter menu-content-starter menu-content-starter"
+    "menu-content-main menu-content-main menu-content-main"
+    "menu-content-dessert menu-content-dessert menu-content-dessert"
+    ". menu-btn .";
+    grid-template-columns: rem(70) 1fr rem(70);
+    grid-row-gap: rem(40);
+    border-radius: rem(40) rem(40) 0 0;
+  }
+  &__title {
+    grid-area: menu-title;
+  }
+  &__content {
+    &--starter {
+      grid-area: menu-content-starter;
+    }
+    &--main {
+      grid-area: menu-content-main;
+    }
+    &--dessert {
+      grid-area: menu-content-dessert;
+    }
+  }
+  &__btn {
+    grid-area: menu-btn;
+  }
+}
