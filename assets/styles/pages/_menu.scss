@@ -59,7 +59,7 @@
       ". menu-content-item-title menu-content-item-title menu-content-item-check"
       ". menu-content-item-info menu-content-item-price menu-content-item-check"
       ". . . menu-content-item-check";
-      grid-template-columns: rem(10) 1fr rem(70) rem(60);
+      grid-template-columns: rem(10) 1fr rem(70) min-content;
       grid-template-rows: rem(10) 1fr 1fr rem(10);
       overflow: hidden;
       background-color: #fff;
@@ -86,6 +86,23 @@
         border: none;
         font-size: $omg-font-size--large;
         color: #fff;
+        &__icn {
+          transform: rotate(0);
+        }
+        width: rem(0);
+        transform: translateX(60px);
+      }
+      &:hover {
+        cursor: pointer;
+      }
+      &:hover &__check {
+        width: rem(60);
+        transform: translateX(0);
+        transition: all 500ms;
+      }
+      &:hover &__check__icn {
+        transform: rotate(360deg);
+        transition: transform 500ms;
       }
     }
   }
