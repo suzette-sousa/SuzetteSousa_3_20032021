@@ -7,6 +7,31 @@
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
+
+@keyframes clockwiseAnticlockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeOutUndisplay {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
