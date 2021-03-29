@@ -27,6 +27,8 @@
     grid-area: menu-title;
   }
   &__content {
+    display: grid;
+    grid-row-gap: rem(13);
     &--starter {
       grid-area: menu-content-starter;
     }
