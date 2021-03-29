@@ -3,11 +3,15 @@
 
 .omf-l-header {
   display: grid;
-  z-index: 1;
+  grid-template-columns: rem(65) 1fr rem(65);
+  grid-template-areas: ". header-logo .";
+  justify-items: center;
+  align-items: center;
   position: relative;
-  justify-content: center;
+  z-index: 1;
   box-shadow: 0 0 5px $omf-color--grey-darker;
   &__logo {
+    grid-area: header-logo;
     padding: rem(10) 0;
     font-family: $omf-font--special;
     font-size: $omg-font-size--xlarge;

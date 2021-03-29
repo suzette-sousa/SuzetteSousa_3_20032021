@@ -2,6 +2,16 @@
 @use '../abstracts/functions' as *;
 @use '../abstracts/mixins' as *;
 
+.omf-c-link-btn {
+  padding: rem(15);
+  font-size: $omg-font-size--medium;
+  &:hover {
+    text-decoration: none;
+  }
+  &--primary:hover {
+    color: $omf-color--primary;
+  }
+}
 .omf-c-btn {
   padding: rem(15) rem(22);
   @include gradient($omf-color--primary, $omf-color--secondary);
