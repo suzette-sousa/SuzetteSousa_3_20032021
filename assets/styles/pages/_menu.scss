@@ -52,6 +52,42 @@
         border: 2px solid $omf-color--tertiary;
       }
     }
+    &__item {
+      display: grid;
+      grid-template-areas: 
+      ". . . menu-content-item-check"
+      ". menu-content-item-title menu-content-item-title menu-content-item-check"
+      ". menu-content-item-info menu-content-item-price menu-content-item-check"
+      ". . . menu-content-item-check";
+      grid-template-columns: rem(10) 1fr rem(70) rem(60);
+      grid-template-rows: rem(10) 1fr 1fr rem(10);
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 0 15px $omf-color--grey-light;
+      border-radius: rem(15);
+      font-size: $omg-font-size--small;
+      font-weight: 300;
+      &__title {
+        grid-area: menu-content-item-title;
+        font-size: $omg-font-size--medium;
+        font-weight: 500;
+      }
+      &__info {
+        grid-area: menu-content-item-info;
+      }
+      &__price {
+        grid-area: menu-content-item-price;
+        justify-self: center;
+        font-weight: 500;
+      }
+      &__check {
+        grid-area: menu-content-item-check;
+        background-color: $omf-color--tertiary;
+        border: none;
+        font-size: $omg-font-size--large;
+        color: #fff;
+      }
+    }
   }
   &__btn {
     grid-area: menu-btn;
