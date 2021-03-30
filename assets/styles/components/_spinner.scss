@@ -13,9 +13,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: 7s ease-in-out forwards fadeOutUndisplay;
+  animation: 2.5s ease-in-out forwards fadeOutUndisplay;
   &__icn {
     font-size: rem(100);
-    animation: 2s ease-in-out infinite clockwiseAnticlockwise;
+    animation: 750ms ease-in-out infinite clockwiseAnticlockwise;
   }
 }
