@@ -11,9 +11,7 @@
     "url": "git+https://github.com/suzette-sousa/SuzetteSousa_3_20032021.git"
   },
   "devDependencies": {
-    "sass": "^1.32.8"
-  },
-  "dependencies": {
+    "sass": "^1.32.8",
     "nodemon": "^2.0.7"
   }
 }
