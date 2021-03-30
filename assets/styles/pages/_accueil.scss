@@ -58,5 +58,11 @@
       font-size: $omg-font-size--medium;
       color: $omf-color--grey-darker;
     }
+    &:hover {
+      background-color: $omf-color--primary-light;
+    }
+    &:hover &__ico {
+      color: $omf-color--primary;
+    }
   }
 }
