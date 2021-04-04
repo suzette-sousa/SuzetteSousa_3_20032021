@@ -19,9 +19,6 @@
     color: $omf-color--tertiary-dark;
     font-size: $omg-font-size--xsmall;
   }
-  & + & {
-    margin-top: rem(15);
-  }
   &__content {
     display: flex;
     justify-content: space-between;

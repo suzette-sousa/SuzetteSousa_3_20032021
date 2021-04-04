@@ -1,7 +1,24 @@
 
-@use '../abstracts/variables' as v;
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
 
 .omf-u-ctn {
-  padding-left: v.$gutter--default;
-  padding-right: v.$gutter--default;
+  padding-left: $gutter--default;
+  padding-right: $gutter--default;
+}
+
+.omf-u-grid {
+  display: grid;
+}
+.omf-u-grid--auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.omf-u-grid--auto-fill {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.omf-u-gridgap--small {
+  grid-gap: $gutter-inner--small;
+}
+.omf-u-gridgap--medium {
+  grid-gap: $gutter-inner--medium;
 }

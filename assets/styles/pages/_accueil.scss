@@ -1,7 +1,27 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/functions' as *;
 
+// .omf-home_main {
+//   display: grid;
+//   grid-template-areas: 
+//   "geoloc geoloc"
+//   "mea mea"
+//   "howto howto"
+//   "restos restos";
+// }
+// @media screen and (min-width: 960px) {
+//   .omf-home_main {
+//     display: grid;
+//     grid-template-areas: 
+//     "geoloc geoloc"
+//     "mea restos"
+//     "howto restos"
+//     ". restos";
+//   }
+// }
+
 .omf-geoloc {
+  grid-area: geoloc;
   padding: rem(15);
   background-color: $omf-color--grey-lighter;
   text-align: center;
@@ -12,6 +32,7 @@
 }
 
 .omf-mea {
+  grid-area: mea;
   &__title {
     margin-bottom: rem(10);
     font-size: $omg-font-size--large;
@@ -21,7 +42,10 @@
   }
 }
 
-.omg-howto {
+.omf-howto {
+  grid-area: howto;
+}
+.omf-howto__content {
   counter-reset: section;
   &__item {
     position: relative;
@@ -46,9 +70,6 @@
     border-radius: rem(25);
     box-shadow: 0 4px 15px $omf-color--grey-light;
     font-size: $omg-font-size--small;
-    & + & {
-      margin-top: rem(20);
-    }
     &__ico {
       display: inline-flex;
       justify-content: center;
@@ -65,4 +86,8 @@
       color: $omf-color--primary;
     }
   }
+}
+
+.omf-restos {
+  grid-area: restos;
 }

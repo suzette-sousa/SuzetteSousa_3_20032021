@@ -4,9 +4,6 @@
 @import url($omf-font-url);
 
 body {
-  max-width: 375px; // A supprimer
-  box-shadow: 0 0 10px #ccc; // A supprimer
-  margin: auto; // A supprimer
   font-family: $omf-font--default;
   font-size: $omg-font-size--medium;
   line-height: 1.3;

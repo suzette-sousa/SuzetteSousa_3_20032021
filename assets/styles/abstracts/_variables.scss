@@ -40,4 +40,15 @@ $omg-font-size--xsmall: rem(14);
 /* ----------------------------- */
 /* SPACINGS
 /* ----------------------------- */
-$gutter--default: rem(20);
+:root {
+  --gutter--default: #{rem(20)};
+}
+@media screen and (min-width: 600px) {
+  :root {
+    --gutter--default: 10vw;
+  }
+}
+$gutter--default: var(--gutter--default);
+$padd--default: rem(20);
+$gutter-inner--small: 4vw;
+$gutter-inner--medium: 5.33vw;
