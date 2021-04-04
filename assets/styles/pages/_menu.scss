@@ -11,14 +11,15 @@
     left: 0;
     right: 0;
     margin-bottom: rem(-50);
+    width: 100%;
+    max-height: 40vh;
+    object-fit: cover;
   }
   &__section {
     display: grid;
     grid-template-areas: 
     "menu-title menu-title ."
-    "menu-content-starter menu-content-starter menu-content-starter"
-    "menu-content-main menu-content-main menu-content-main"
-    "menu-content-dessert menu-content-dessert menu-content-dessert"
+    "menu-contents menu-contents menu-contents"
     ". menu-btn .";
     grid-template-columns: rem(70) 1fr rem(70);
     grid-row-gap: rem(40);
@@ -27,23 +28,13 @@
   &__title {
     grid-area: menu-title;
   }
+  &__contents {
+    grid-area: menu-contents;
+  }
   &__content {
     display: grid;
     grid-row-gap: rem(13);
-    &--starter {
-      grid-area: menu-content-starter;
-    }
-    &--main {
-      grid-area: menu-content-main;
-    }
-    &--dessert {
-      grid-area: menu-content-dessert;
-    }
     &__title {
-      font-size: $omg-font-size--small;
-      text-transform: uppercase;
-      font-weight: 300;
-      position: relative;
       &::after {
         content: "";
         position: absolute;
@@ -52,6 +43,11 @@
         width: rem(40);
         border: 2px solid $omf-color--tertiary;
       }
+      position: relative;
+      margin-bottom: rem(10);
+      font-size: $omg-font-size--small;
+      text-transform: uppercase;
+      font-weight: 300;
     }
     &__item {
       display: grid;
@@ -120,5 +116,7 @@
   }
   &__btn {
     grid-area: menu-btn;
+    width: rem(190);
+    justify-self: center;
   }
 }
