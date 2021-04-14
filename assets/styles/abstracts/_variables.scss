@@ -43,7 +43,7 @@ $omg-font-size--xsmall: rem(14);
 :root {
   --gutter--default: #{rem(20)};
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 769px) {
   :root {
     --gutter--default: 10vw;
   }
