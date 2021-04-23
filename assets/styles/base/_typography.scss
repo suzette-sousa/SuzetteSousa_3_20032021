@@ -1,8 +1,6 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/functions' as *;
 
-@import url($omf-font-url);
-
 body {
   font-family: $omf-font--default;
   font-size: $omg-font-size--medium;
