@@ -9,6 +9,14 @@
   border-radius: 15px;
   box-shadow: 0 0 15px $omf-color--grey-light;
   font-size: $omg-font-size--medium;
+  &__img-wrap {
+    display: flex;
+    max-height: rem(175);
+  }
+  &__img {
+    object-fit: cover;
+    flex: 1 0 100%;
+  }
   &__label {
     position: absolute;
     right: rem(13);
