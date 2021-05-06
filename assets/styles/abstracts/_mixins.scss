@@ -41,14 +41,39 @@
 // @include rwd(min-width, 1300px) {...}
 //
 
+/* ----------------------------- */
+/* GRADIENT
+/* ----------------------------- */
 @mixin gradient($top-color, $bottom-color) {
   background: linear-gradient(to bottom, $top-color, $bottom-color);
 }
+
+/* ----------------------------- */
+/* ANIMATIONS
+/* ----------------------------- */
 @mixin animListItems {
   @for $i from 1 through 5 {
     &:nth-child(#{$i}) {
       opacity: 0;
       animation: 1.2s #{$i * .2}s ease-in-out forwards animListItems;
     }
+  }
+}
+
+@mixin fillFontGradient {
+  background: #fff;
+  -webkit-text-stroke: 1px;
+  background-position-y: 2rem;
+  &:hover {
+    @include gradient($omf-color--primary, $omf-color--secondary);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    transition: background-position-y ease 500ms;
+    -webkit-text-stroke: 0;
+  }
+  &, &:hover {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
