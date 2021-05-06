@@ -1,19 +1,27 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
 
 .omf-l-footer {
   background-color: $omf-color--grey-darkest;
   color: #fff;
   padding: $padd--default 0;
+  @include rwd(mobile-l) {
+    text-align: center;
+  }
   &__logo {
     display: block;
     margin-bottom: rem(10);
     font-family: $omf-font--special;
   }
   &__link {
-    display: flex;
+    display: block;
     padding: rem(3) 0;
     font-size: $omg-font-size--small;
+    @include rwd(tablet) {
+      display: inline-block;
+      margin: 0 rem(20);
+    }
   }
   &__icn {
     width: rem(30);
