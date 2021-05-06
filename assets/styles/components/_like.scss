@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+
+.omf-c-like {
+  padding: 0 rem(12);
+  font-size: $omg-font-size--xlarge;
+  background: #fff;
+  -webkit-text-stroke: 1px;
+  background-position-y: 2rem;
+  &:hover {
+    @include gradient($omf-color--primary, $omf-color--secondary);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    transition: background-position-y ease 500ms;
+    -webkit-text-stroke: 0;
+  }
+  &, &:hover {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
