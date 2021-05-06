@@ -1,25 +1,6 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/functions' as *;
 
-// .omf-home_main {
-//   display: grid;
-//   grid-template-areas: 
-//   "geoloc geoloc"
-//   "mea mea"
-//   "howto howto"
-//   "restos restos";
-// }
-// @media screen and (min-width: 960px) {
-//   .omf-home_main {
-//     display: grid;
-//     grid-template-areas: 
-//     "geoloc geoloc"
-//     "mea restos"
-//     "howto restos"
-//     ". restos";
-//   }
-// }
-
 .omf-geoloc {
   grid-area: geoloc;
   padding: rem(15);
