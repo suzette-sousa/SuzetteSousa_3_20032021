@@ -1,6 +1,46 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/functions' as *;
 
+/* ----------------------------- */
+/* RWD
+/* ----------------------------- */
+@mixin rwd($brk, $val: 0) {
+  @if $brk == mobile {
+		@media screen and (min-width: map-get($rwd-brk, mobile)) {
+      @content;
+    }
+	}
+	@else if $brk == mobile-l {
+		@media screen and (min-width: map-get($rwd-brk, mobile-l)) {
+      @content;
+    }
+	}
+	@else if $brk == tablet {
+		@media screen and (min-width: map-get($rwd-brk, tablet)) {
+      @content;
+    }
+	}
+	@else if $brk == laptop {
+		@media screen and (min-width: map-get($rwd-brk, laptop)) {
+      @content;
+    }
+	}
+	@else if $brk == laptop-l {
+		@media screen and (min-width: map-get($rwd-brk, laptop-l)) {
+      @content;
+    }
+	}
+	@else {
+		@media ($brk: $val) {
+      @content;
+    }
+	}
+}
+// Use :
+// @include rwd(tablet) {...}
+// @include rwd(min-width, 1300px) {...}
+//
+
 @mixin gradient($top-color, $bottom-color) {
   background: linear-gradient(to bottom, $top-color, $bottom-color);
 }

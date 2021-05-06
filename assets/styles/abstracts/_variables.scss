@@ -51,3 +51,14 @@ $gutter--default: var(--gutter--default);
 $padd--default: rem(20);
 $gutter-inner--small: 4vw;
 $gutter-inner--medium: 5.33vw;
+
+/* ----------------------------- */
+/* BREAKPOINTS
+/* ----------------------------- */
+$rwd-brk: (
+  mobile-s: 320px,
+  mobile-l: 425px,
+  tablet: 768px,
+  laptop: 1024px,
+  laptop-l: 1440px
+);
