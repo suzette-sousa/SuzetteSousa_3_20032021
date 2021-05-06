@@ -33,6 +33,7 @@
   }
   &__content {
     display: grid;
+    grid-auto-rows: max-content;
     grid-row-gap: rem(13);
     &__title {
       &::after {
@@ -82,6 +83,11 @@
       }
       &__info {
         grid-area: menu-content-item-info;
+      }
+      &__title, &__info {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
       }
       &__price {
         grid-area: menu-content-item-price;
