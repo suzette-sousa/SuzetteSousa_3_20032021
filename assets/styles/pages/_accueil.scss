@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
 
 .omf-geoloc {
   grid-area: geoloc;
@@ -46,7 +47,7 @@
       color: #fff;
     }
     margin-left: rem(15);
-    padding: rem(25) rem(35);
+    padding: rem(25) rem(5) rem(25) rem(35);
     background-color: $omf-color--grey-lightest;
     border-radius: rem(25);
     box-shadow: 0 4px 15px $omf-color--grey-light;
