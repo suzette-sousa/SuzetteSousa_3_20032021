@@ -105,6 +105,7 @@
         }
         width: rem(0);
         transform: translateX(60px);
+        transition: all 500ms;
       }
       &:hover {
         cursor: pointer;
