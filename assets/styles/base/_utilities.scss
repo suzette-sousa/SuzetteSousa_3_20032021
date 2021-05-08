@@ -12,13 +12,13 @@
     max-width: map-get($rwd-brk, tablet);
   }
   @include rwd(laptop) {
-    max-width: map-get($rwd-brk, tablet);
+    max-width: 960px;
   }
   @include rwd(laptop-l) {
-    max-width: map-get($rwd-brk, laptop);
+    max-width: 1200px;
   }
   @include rwd(min-width, 1800px) {
-    max-width: map-get($rwd-brk, laptop-l);
+    max-width: 1500px;
   }
 }
 
@@ -31,9 +31,26 @@
 .omf-u-grid--auto-fill {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
+@include rwd(min-width, 1800px) {
+  .omf-u-grid--auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  }
+  .omf-u-grid--auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  }
+}
 .omf-u-gridgap--small {
   grid-gap: $gutter-inner--small;
 }
 .omf-u-gridgap--medium {
   grid-gap: $gutter-inner--medium;
+}
+.omf-u-gridrowgap--medium {
+  grid-row-gap: $gutter-inner--medium;
+}
+.omf-u-gridcolgap--default {
+  grid-column-gap: rem(20);
+  @include rwd(laptop) {
+    grid-column-gap: rem(30);
+  }
 }
