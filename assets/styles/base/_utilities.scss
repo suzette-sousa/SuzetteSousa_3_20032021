@@ -1,10 +1,25 @@
 
 @use '../abstracts/variables' as *;
 @use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
 
 .omf-u-ctn {
   padding-left: $gutter--default;
   padding-right: $gutter--default;
+  width: 100%;
+  margin: auto;
+  @include rwd(tablet) {
+    max-width: map-get($rwd-brk, tablet);
+  }
+  @include rwd(laptop) {
+    max-width: map-get($rwd-brk, tablet);
+  }
+  @include rwd(laptop-l) {
+    max-width: map-get($rwd-brk, laptop);
+  }
+  @include rwd(min-width, 1800px) {
+    max-width: map-get($rwd-brk, laptop-l);
+  }
 }
 
 .omf-u-grid {

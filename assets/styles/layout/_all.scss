@@ -1,9 +1,16 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
 
+body {
+  background-color: $omf-color--grey-lightest;
+}
 .omf-l-section, .omf-l-aside {
   padding-top: rem(50);
   padding-bottom: rem(50);
+}
+.omf-l-aside {
+  background-color: #fff;
 }
 .omf-l-section {
   &--small {

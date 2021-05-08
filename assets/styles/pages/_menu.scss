@@ -21,11 +21,15 @@
     "menu-title menu-title ."
     "menu-contents menu-contents menu-contents"
     ". menu-btn .";
-    grid-template-columns: rem(70) 1fr rem(70);
+    grid-template-columns: rem(70) minmax(rem(140), 100%) rem(70);
     grid-row-gap: rem(40);
-    border-radius: rem(40) rem(40) 0 0;
     padding-top: rem(30);
     padding-bottom: rem(80);
+    border-radius: rem(40) rem(40) 0 0;
+    @include rwd(tablet) {
+      border: 1px solid #fff;
+      box-shadow: 0 0px 2px $omf-color--grey-light;
+    }
   }
   &__title {
     grid-area: menu-title;

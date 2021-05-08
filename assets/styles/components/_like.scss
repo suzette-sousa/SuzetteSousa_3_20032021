@@ -4,6 +4,7 @@
 
 .omf-c-like {
   padding: 0 rem(12);
+  justify-self: flex-end;
   font-size: $omg-font-size--xlarge;
   @include fillFontGradient;
 }

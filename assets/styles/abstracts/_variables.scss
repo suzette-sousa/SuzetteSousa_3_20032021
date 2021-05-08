@@ -41,16 +41,20 @@ $omg-font-size--xsmall: rem(14);
 /* ----------------------------- */
 :root {
   --gutter--default: #{rem(20)};
+  --gutter-inner--small: 4vw;
+  --gutter-inner--medium: 5.33vw;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
   :root {
-    --gutter--default: 10vw;
+    --gutter--default: #{rem(40)};
+    --gutter-inner--small: #{rem(40)};
+    --gutter-inner--medium: #{rem(50)};
   }
 }
 $gutter--default: var(--gutter--default);
 $padd--default: rem(20);
-$gutter-inner--small: 4vw;
-$gutter-inner--medium: 5.33vw;
+$gutter-inner--small: var(--gutter-inner--small);
+$gutter-inner--medium: var(--gutter-inner--medium);
 
 /* ----------------------------- */
 /* BREAKPOINTS
